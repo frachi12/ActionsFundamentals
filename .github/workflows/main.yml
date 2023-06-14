@@ -1,0 +1,21 @@
+name: GitHub Actions Demo
+run-name: Deploy GitHub Actions Demo
+on:
+  push:
+    branches:
+      - main
+    paths-ignore: 
+      - '.github/**'
+  pull_request:
+    branches:
+    - main
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '15 6 * * SUN'
+
+    
+    
+
+
+  
+  
